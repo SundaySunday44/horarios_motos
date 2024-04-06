@@ -1,0 +1,20 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<div class="container-header">
+    <h1>Horarios designados</h1>
+</div>
+<div class="container-mid">
+    <div class="horarios">
+        <div class="horario" *ngFor="let horario of horariosAsignados; let i=index" [ngClass]="{'selected': horariosBoolean[i]}" (click)="isSelected(i)">
+            <p>Estado: {{horario.estado}} <br> {{horario.hora}} <br> Recurso: {{horario.recursoAsignado}}</p>
+        </div>
+    </div>
+    <div class="resources">
+        <div class="resource" *ngFor="let resource of recursosDisponibles">
+            <p>Recurso{{resource}}</p>
+        </div>
+    </div>
+</div>

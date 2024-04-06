@@ -1,0 +1,44 @@
+.container-header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.container-mid {
+    display: flex;
+    justify-content: center;
+}
+
+.container-mid .resource {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    width: 150px;
+    height: 75px;
+    margin: 5px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-mid .horario {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    width: 150px;
+    height: 90px;
+    margin: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-mid .horario:hover {
+    cursor: pointer;
+}
+
+.container-mid .horario.selected {
+    background-color: green;
+}
